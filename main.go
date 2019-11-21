@@ -32,7 +32,7 @@ func main() {
 
 	export("david", "chang")
 
-	gitadd , _ := exec.Command("ls").Output()
+	gitadd , _ := exec.Command("git", "add", "*").Output()
 	fmt.Println(string(gitadd))
 	
 }
