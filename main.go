@@ -27,6 +27,8 @@ func export(fname, lname string) {
 
 }
 
+//This is the part that does all the real work
+
 func main() {
 	fmt.Println("Hello World!")
 
