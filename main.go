@@ -34,6 +34,12 @@ func main() {
 
 	gitadd , _ := exec.Command("git", "add", "*").Output()
 	fmt.Println(string(gitadd))
+
+	gitcommit , _ := exec.Command("git", "commit", "-m", "automatically committed").Output()
+	fmt.Println(string(gitcommit))
+
+	gitpush , _ := exec.Command("git", "push").Output()
+	fmt.Println(string(gitpush))
 	
 }
 
