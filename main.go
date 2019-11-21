@@ -25,11 +25,15 @@ func export(fname, lname string) {
 		fmt.Println(err)
 	}
 
-	exec.Command("mv", "output.json", "./Outputs").Run()
 }
 
 func main() {
 	fmt.Println("Hello World!")
 
 	export("david", "chang")
+
+	gitadd , _ := exec.Command("ls").Output()
+	fmt.Println(string(gitadd))
+	
 }
+
